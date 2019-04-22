@@ -49,10 +49,15 @@ bool Board::getShot(Location loc)
     if (_grid[loc.getX()][loc.getY()]==1)
     {
         _grid[loc.getX()][loc.getY()]=-1;
+        loc._status = false;
         return true;
     }
     else
+    {
+        loc._status = false;
+        _grid[loc.getX()][loc.getY()]='x';
         return false;
+    }
 }
 
 bool Board::isAllShipBurnt()
@@ -72,10 +77,8 @@ void Board::place(Location start, int dir, int shipNo)
                 {
                     _grid[start.getX()][start.getY()+i] = 1;
                 }
-                this->show();
             }
-            else
-                cout << "Choose the head of ship again!";
+
         }
         else //horizontal
         {
@@ -85,10 +88,7 @@ void Board::place(Location start, int dir, int shipNo)
                 {
                     _grid[start.getX()+i][start.getY()] = 1;
                 }
-                this->show();
             }
-            else
-                cout << "Choose the head of ship again!";
         }
     }
 }

@@ -13,7 +13,7 @@ class Ship
     protected:
 
     private:
-        Location deck[3];
+        Location _deck[3];
 };
 
 #endif // SHIP_H

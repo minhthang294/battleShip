@@ -15,7 +15,7 @@ void Human::placeShips()
 {
     int ships =0;
     cout << "Place your ship on the board!" << endl;
-    while (ships<=3)
+    while (ships<3)
     {
         int x,y,dir;
         cout << "Choose the direction of your ship:\n1. Vertical\n2. Horizontal" << endl;
@@ -28,8 +28,9 @@ void Human::placeShips()
         Location loc(x,y);
         if (this->place(loc,dir,ships))
         {
-            ships++;
             _board.place(loc,dir,ships);
+            _board.show();
+            ships++;
         }
         else
             cout << "Wrong location, place again!" << endl;

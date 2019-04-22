@@ -2,7 +2,7 @@
 
 Location::Location()
 {
-
+    _status = true;
 }
 
 Location::Location(int x, int y)
