@@ -14,7 +14,7 @@ class Board
         void show();
         bool getShot(Location l);
         void clearGrid();
-        bool place(Location start, int dir, int shipNo);
+        void place(Location start, int dir, int shipNo);
         bool isAllShipBurnt();
 
     protected:

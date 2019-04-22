@@ -1,5 +1,6 @@
 #ifndef HUMAN_H
 #define HUMAN_H
+#include <iostream>
 #include "Player.h"
 
 
@@ -13,6 +14,8 @@ class Human : public Player
     protected:
 
     private:
+        string _name;
+        int _score;
 };
 
 #endif // HUMAN_H

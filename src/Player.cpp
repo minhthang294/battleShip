@@ -13,7 +13,7 @@ Player::Player()
 bool Player::place(Location start, int dir, int shipNo)
 {
 
-    while (shipNo <=3)
+    while (shipNo <3)
     {
         if (dir == 1) //vertical
         {
