@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1555924407 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\board.cpp
+	"Board.h"
+	"Location.h"
+	<iostream>
+	<stdlib.h>
+	<ctime>
+
+1555924626 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\board.h
+	"Location.h"
+	"Ship.h"
+
+1555924752 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\location.h
+
+1555921961 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\location.cpp
+	"Location.h"
+
+1555924651 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\main.cpp
+	<iostream>
+	"Board.h"
+	"Location.h"
+
+1555906904 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\ship.cpp
+	"Ship.h"
+
+1555924600 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\ship.h
+	"Location.h"
+
