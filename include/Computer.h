@@ -8,6 +8,7 @@ class Computer : public Player
         Computer();
         virtual ~Computer();
         void placeShips();
+        void showBoard();
     protected:
 
     private:

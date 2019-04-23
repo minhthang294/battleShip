@@ -6,6 +6,7 @@
 
 Board::Board()
 {
+    _hits = 0;
     for (int y = 0; y< 8; y++)
     {
         for (int x = 0; x < 8; x++)
@@ -48,21 +49,28 @@ bool Board::getShot(Location loc)
 {
     if (_grid[loc.getX()][loc.getY()]==1)
     {
-        _grid[loc.getX()][loc.getY()]=-1;
-        loc._status = false;
+        _grid[loc.getX()][loc.getY()]='x';
+        _hits++;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j <3;j++)
+            {
+                if(_ships[i]._deck[j].getX() == loc.getX() && _ships[i]._deck[j].getY() == loc.getY())
+                    _ships[i]._deck[j]._status = false;
+            }
+        }
         return true;
     }
     else
     {
-        loc._status = false;
-        _grid[loc.getX()][loc.getY()]='x';
+        _grid[loc.getX()][loc.getY()]='o';
         return false;
     }
 }
 
 bool Board::isAllShipBurnt()
 {
-    return (_ships[0].isBurnt() && _ships[1].isBurnt() && _ships[2].isBurnt());
+    return (_hits==8);
 }
 
 void Board::place(Location start, int dir, int shipNo)

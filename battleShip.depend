@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1556012304 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\board.cpp
+1556024057 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\board.cpp
 	"Board.h"
 	"Location.h"
 	<iostream>
 	<stdlib.h>
 	<ctime>
 
-1556000461 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\board.h
+1556024057 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\board.h
 	"Location.h"
 	"Ship.h"
 
@@ -15,20 +15,20 @@
 1556009392 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\location.cpp
 	"Location.h"
 
-1556011824 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\main.cpp
+1556022264 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\main.cpp
 	<iostream>
 	"Board.h"
 	"Location.h"
 	"Human.h"
 	"Computer.h"
 
-1556009392 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\ship.cpp
+1556023693 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\ship.cpp
 	"Ship.h"
 
-1556006971 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\ship.h
+1556023693 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\ship.h
 	"Location.h"
 
-1556000761 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\computer.cpp
+1556014580 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\computer.cpp
 	"Computer.h"
 	"Player.h"
 	"Board.h"
@@ -38,14 +38,14 @@
 	<stdlib.h>
 	<iostream>
 
-1555921008 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\computer.h
+1556014580 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\computer.h
 	"Player.h"
 
-1555924839 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\player.h
+1556014580 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\player.h
 	"Board.h"
 	"Location.h"
 
-1556000584 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\player.cpp
+1556024291 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\player.cpp
 	"Player.h"
 	"Board.h"
 	"Ship.h"
@@ -61,4 +61,6 @@
 1555935754 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\human.h
 	<iostream>
 	"Player.h"
+
+1556013133 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\hi.cpp
 

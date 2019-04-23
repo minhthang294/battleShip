@@ -13,7 +13,10 @@ Computer::Computer()
 {
     //ctor
 }
-
+void Computer::showBoard()
+{
+    _board.show();
+}
 void Computer::placeShips()
 {
     srand(time(NULL));

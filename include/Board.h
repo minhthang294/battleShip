@@ -22,6 +22,7 @@ class Board
         Ship _ships[3];
 
     private:
+        int _hits;
 };
 
 #endif // BOARD_H

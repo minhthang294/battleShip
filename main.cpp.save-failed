@@ -15,7 +15,6 @@ int main()
     h.placeShips();
     cout << "Game start!" << endl;
     cout << "Your turn" << endl;
-    c.getShot(h.shot())
 
     return 0;
 }

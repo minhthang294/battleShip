@@ -32,6 +32,7 @@ bool Player::place(Location start, int dir, int shipNo)
                 return false;
         }
     }
+    return false;
 }
 
 Location Player::shot()
@@ -48,7 +49,10 @@ bool Player::getShot(Location loc)
 {
     return _board.getShot(loc);
 }
-
+bool Player::isAllShipsBurnt()
+{
+    return _board.isAllShipBurnt();
+}
 Player::~Player()
 {
     //dtor

@@ -12,6 +12,7 @@ class Player
         Location shot();
         bool getShot(Location loc);
         bool isAllShipsBurnt();
+        virtual void placeShips()=0;
         virtual ~Player();
 
     protected:

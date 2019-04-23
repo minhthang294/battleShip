@@ -47,6 +47,7 @@
 		<Unit filename="src/Location.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Ship.cpp" />
+		<Unit filename="src/hi.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -8,13 +8,24 @@ using namespace std;
 
 int main()
 {
-
+    Board b;
+    b.show();
     Computer c;
     c.placeShips();
     Human h;
-    h.placeShips();
     cout << "Game start!" << endl;
     cout << "Your turn" << endl;
+    c.showBoard();
+    while (!c.isAllShipsBurnt() || !h.isAllShipsBurnt())
+    {
+       while (c.getShot(h.shot()))
+       {
+           cout << "hit" << endl;
+           c.showBoard();
+       }
+       cout << "miss" << endl;
+       c.showBoard();
+    }
 
     return 0;
 }

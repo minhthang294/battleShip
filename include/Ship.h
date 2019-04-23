@@ -10,11 +10,12 @@ class Ship
         virtual ~Ship();
         bool isBurnt();
         void setShip(Location deck[3]);
+        Location _deck[3];
 
     protected:
 
     private:
-        Location _deck[3];
+
 };
 
 #endif // SHIP_H
