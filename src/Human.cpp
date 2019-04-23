@@ -23,7 +23,7 @@ void Human::placeShips()
         cout << "Where is the head of your ship?" << endl;
         cout << "x = ";
         cin >> x;
-        cout << "\ny = ";
+        cout << "y = ";
         cin >> y;
         Location loc(x,y);
         if (this->place(loc,dir,ships))

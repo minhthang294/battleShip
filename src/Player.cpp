@@ -22,7 +22,7 @@ bool Player::place(Location start, int dir, int shipNo)
             else
                 return false;
         }
-        else //horizontal
+        else if (dir == 2) //horizontal
         {
             if (start.getX()<=5 && start.getX() >= 0)
                 return true;

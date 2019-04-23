@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 
-    Human h;
-    h.placeShips();
+    Computer c;
+    c.placeShips();
     return 0;
 }

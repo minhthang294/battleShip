@@ -13,7 +13,7 @@ Board::Board()
             _grid[x][y] = 0;
         }
     }
-    this->show();
+
 }
 
 void Board::show()
@@ -80,7 +80,7 @@ void Board::place(Location start, int dir, int shipNo)
             }
 
         }
-        else //horizontal
+        else if (dir == 2) //horizontal
         {
             if (start.getX()<=5 && start.getX() >= 0)
             {

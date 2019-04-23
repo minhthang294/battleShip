@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1555940296 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\board.cpp
+1555984438 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\board.cpp
 	"Board.h"
 	"Location.h"
 	<iostream>
@@ -15,7 +15,7 @@
 1555940077 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\location.cpp
 	"Location.h"
 
-1555936614 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\main.cpp
+1555984267 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\main.cpp
 	<iostream>
 	"Board.h"
 	"Location.h"
@@ -28,8 +28,15 @@
 1555940077 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\ship.h
 	"Location.h"
 
-1555920925 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\computer.cpp
+1555984403 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\computer.cpp
 	"Computer.h"
+	"Player.h"
+	"Board.h"
+	"Ship.h"
+	"Location.h"
+	<ctime>
+	<stdlib.h>
+	<iostream>
 
 1555921008 c:\users\minhthangpham\desktop\code-work-study\c++\battleship\include\computer.h
 	"Player.h"
@@ -38,14 +45,14 @@
 	"Board.h"
 	"Location.h"
 
-1555939239 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\player.cpp
+1555983208 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\player.cpp
 	"Player.h"
 	"Board.h"
 	"Ship.h"
 	"Location.h"
 	<iostream>
 
-1555939239 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\human.cpp
+1555983406 source:c:\users\minhthangpham\desktop\code-work-study\c++\battleship\src\human.cpp
 	"Human.h"
 	"Player.h"
 	<iostream>
