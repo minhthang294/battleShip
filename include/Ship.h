@@ -9,6 +9,7 @@ class Ship
         Ship();
         virtual ~Ship();
         bool isBurnt();
+        void setShip(Location deck[3]);
 
     protected:
 

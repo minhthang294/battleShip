@@ -10,6 +10,7 @@ class Location
         virtual ~Location();
         int getX();
         int getY();
+        void setXY(int x, int y);
         bool _status;
 
     protected:

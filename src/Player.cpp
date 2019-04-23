@@ -12,19 +12,21 @@ Player::Player()
 }
 bool Player::place(Location start, int dir, int shipNo)
 {
+    int x = start.getX();
+    int y = start.getY();
 
     if (shipNo <3)
     {
         if (dir == 1) //vertical
         {
-            if(start.getY()<=5 && start.getY()>=0)
+            if(start.getY()<=5 && start.getY()>=0 && _board._grid[x][y] != 1 && _board._grid[x][y+1] != 1 && _board._grid[x][y+2] != 1)
                 return true;
             else
                 return false;
         }
         else if (dir == 2) //horizontal
         {
-            if (start.getX()<=5 && start.getX() >= 0)
+            if (start.getX()<=5 && start.getX() >= 0 && _board._grid[x][y] != 1 && _board._grid[x][y+1] != 1 && _board._grid[x][y+2] != 1)
                 return true;
             else
                 return false;

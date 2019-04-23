@@ -12,6 +12,12 @@ Location::Location(int x, int y)
     _y = y;
 
 }
+
+void Location::setXY(int x, int y)
+{
+    _x = x;
+    _y = y;
+}
 int Location::getX()
 {
     return _x;

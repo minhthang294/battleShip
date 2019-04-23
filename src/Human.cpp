@@ -1,5 +1,6 @@
 #include "Human.h"
 #include "Player.h"
+#include "Ship.h"
 #include <iostream>
 
 using namespace std;

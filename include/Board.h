@@ -16,9 +16,9 @@ class Board
         void clearGrid();
         void place(Location start, int dir, int shipNo);
         bool isAllShipBurnt();
-
-    protected:
         char _grid[8][8];
+    protected:
+
         Ship _ships[3];
 
     private:

@@ -62,32 +62,40 @@ bool Board::getShot(Location loc)
 
 bool Board::isAllShipBurnt()
 {
-
+    return (_ships[0].isBurnt() && _ships[1].isBurnt() && _ships[2].isBurnt());
 }
 
 void Board::place(Location start, int dir, int shipNo)
 {
+    int x = start.getX();
+    int y = start.getY();
     if (shipNo < 3)
     {
         if (dir == 1) //Vertical
         {
-            if(start.getY()<=5 && start.getY()>=0)
+            if(start.getY()<=5 && start.getY()>=0 && _grid[x][y] != 1 && _grid[x][y+1] != 1 && _grid[x][y+2] != 1)
             {
+                Location deck[3];
                 for (int i = 0; i < 3; i++)
                 {
                     _grid[start.getX()][start.getY()+i] = 1;
+                    deck[i].setXY(x,y+i);
                 }
+                _ships[shipNo].setShip(deck);
             }
 
         }
         else if (dir == 2) //horizontal
         {
-            if (start.getX()<=5 && start.getX() >= 0)
+            if (start.getX()<=5 && start.getX() >= 0 && _grid[x][y] != 1 && _grid[x+1][y] != 1 && _grid[x+2][y] != 1)
             {
+                Location deck[3];
                 for (int i = 0; i < 3; i++)
                 {
                     _grid[start.getX()+i][start.getY()] = 1;
+                    deck[i].setXY(x+i,y);
                 }
+                _ships[shipNo].setShip(deck);
             }
         }
     }

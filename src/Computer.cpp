@@ -16,15 +16,14 @@ Computer::Computer()
 
 void Computer::placeShips()
 {
+    srand(time(NULL));
     int ships = 0;
     while (ships < 3)
     {
         int x,y,dir;
-        srand(time(NULL));
         dir = rand() % 2 + 1; //random in 1..2
         if (dir == 1) // vertical
         {
-            srand(time(NULL));
             y = rand() % 6; //random in 0..5
             x = rand() % 8; //random in 0..7
             Location loc(x,y);
@@ -36,7 +35,6 @@ void Computer::placeShips()
         }
         else if (dir == 2) //horizontal
         {
-            srand(time(NULL));
             x = rand() % 6; //random in 0..5
             y = rand() % 8; //random in 0..7
             Location loc(x,y);
@@ -47,7 +45,7 @@ void Computer::placeShips()
             }
         }
     }
-    _board.show();
+    //_board.show();
 }
 
 Computer::~Computer()
